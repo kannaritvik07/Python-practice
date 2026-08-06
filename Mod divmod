@@ -1,0 +1,6 @@
+a,b=(int,input().split())
+division=a // b
+modulo=a%b
+print(division)
+print(modulo)
+print(division,modulo)
