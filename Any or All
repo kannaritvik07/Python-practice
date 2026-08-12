@@ -1,0 +1,4 @@
+n=int(input())
+arr=list(map(int,input().split()))
+print(all(n>0 for n in arr)and any(str(n)==str(n)[::-1] for n in arr))
+    
