@@ -1,0 +1,9 @@
+import re
+s=input()
+k=input()
+found=False
+for match in re.finditer(f'(?={re.escape(k)})', s):
+    print((match.start(),match.start()+len(k)-1))
+    found=True
+if not found:
+    print((-1,-1))
