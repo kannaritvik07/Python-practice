@@ -1,0 +1,8 @@
+import re
+n=int(input())
+for _ in range (n):
+    m=input()
+    if re.match(r'^[789][0-9]{9}$',m):
+        print("YES")
+    else:
+        print("NO")  
