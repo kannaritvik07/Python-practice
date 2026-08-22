@@ -1,0 +1,14 @@
+import re
+
+n = int(input())
+
+for _ in range(n):
+    m = input()
+
+    if m.strip().startswith('#'):
+        continue
+
+    colors = re.findall(r'#[0-9a-fA-F]{3,6}', m)
+
+    for color in colors:
+        print(color)
