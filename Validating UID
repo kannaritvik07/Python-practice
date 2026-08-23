@@ -1,0 +1,12 @@
+import re
+n=int(input())
+for _ in range(n):
+    m=input()
+    if (len(m)==10and
+        m.isalnum()and
+        len(set(m))==10 and
+        len(re.findall(r'[A-Z]',m))>=2and
+        len(re.findall(r'\d',m))>=3):
+        print("Valid")
+    else:
+        print("Invalid")
