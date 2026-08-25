@@ -1,0 +1,13 @@
+import re
+n=int(input())
+for _ in range(n):
+    card=input()
+    if not re.fullmatch(r'[456]\d{15}|[456]\d{3}(-\d{4}){3}',card):
+        print("Invalid")
+        continue
+    digits=card.replace('-','')
+    if re.search(r'(\d)\1\1\1',digits):
+        print("Invalid")
+    else:
+        print("Valid")
+        
