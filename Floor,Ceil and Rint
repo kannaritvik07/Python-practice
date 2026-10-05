@@ -1,0 +1,5 @@
+import numpy as np
+a=np.array(list(map(float,input().split())))
+print(np.floor(a))
+print(np.floor(a)+1)
+print(np.floor(a)+1)
